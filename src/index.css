@@ -6,9 +6,10 @@
 }
 
 body {
+  background-image: url("https://wallpaperset.com/w/full/7/5/b/203988.jpg");
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
-  /* font-family: 'Open Sans', sans-serif; */
+  /* font-family: 'Roboto Mono', monospace; */
+  font-family: 'Open Sans', sans-serif;
   font-weight: 100 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,7 +21,19 @@ body {
   background-color: #161E29;
   opacity: 1 */
 }
-
+body::before {
+  z-index: -9999;
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.678);
+}
+::-webkit-scrollbar {
+  width: 0px; /* Hide the scrollbar in WebKit-based browsers */
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
