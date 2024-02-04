@@ -16,7 +16,7 @@ export default function Info() {
         <h1>Who can turn your ideas into reality</h1>
         <div className="info-page-icon">
           <a
-            href="https://drive.google.com/file/d/1OsR6U9VOXEIEY55QZyVKDvEAcG-UlDUt/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1i3AMiHoE6i3I-E1bYWgdvpi37IiRoO2l/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
