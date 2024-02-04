@@ -1,0 +1,85 @@
+nav {
+    width: 100vw;
+    height: 8vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+
+    .nav-left {
+        width: 20vw;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        
+        p {
+            margin: 0;
+        }
+        
+        p:nth-child(2) {
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+    
+    .nav-middle {
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 20vw;
+        button {
+            background-color: rgb(168, 127, 251);
+            color: black;
+            width: fit-content;
+            height: 5vh;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 4px 12px;
+            font-family: 'Roboto Mono', monospace;
+            border-radius: 60px;
+            cursor: url('../Assests/icons8-aim-24.png'), auto;
+        }
+    }
+
+    .nav-middle-switch {
+        width: fit-content;
+        height: 5vh;
+        border: 2px solid whitesmoke;
+        padding: 2px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        border-radius: 60px;
+        gap: 10px;
+        transition: 0.4s ease-in-out;
+
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+            height: 3vh;
+            padding: 12px;
+            cursor: url('../Assests/icons8-aim-24.png'), auto;
+        }
+        
+        .active {
+            cursor: url('../Assests/icons8-aim-24.png'), auto;
+            background-color: rgba(255, 255, 255, 0.156);
+            border-radius: 60px !important;
+            padding-top: 4px;
+            padding-bottom: 4px;
+
+        }
+    }
+}

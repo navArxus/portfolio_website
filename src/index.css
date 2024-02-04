@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  cursor: url('../src/Assests/icons8-aim-24\ \(1\).png'), auto;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-weight: 100 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(11, 15, 21);
+  color: whitesmoke;
+
+  /* background: radial-gradient(circle, #a87ffb40 10%, transparent 11%);
+  background-size: 1em 1em;
+  background-color: #161E29;
+  opacity: 1 */
 }
 
 code {
