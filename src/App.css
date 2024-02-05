@@ -1,4 +1,25 @@
 .App {
   text-align: center;
-  display: block;
+  position: relative;
+  transition: 0.4s  ;
+  
+  .FlyingImage {
+    bottom: -200px;
+    right: -600px;
+    animation: FltingAreo 3s ;
+    position: absolute;
+    transition: 0.4s all;
+    width: 30%;
+    transform: rotate(-20deg);
+  }
+  
+}
+@keyframes  FltingAreo{
+  0% {
+    transform: translate(180px ,180px);
+  }
+  100% {
+    transform: translate(-2500px ,-800px);
+
+  }
 }

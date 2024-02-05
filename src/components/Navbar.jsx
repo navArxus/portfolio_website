@@ -11,6 +11,8 @@ export default function Navbar() {
       };
     return (
         <nav className='nav'>
+      {/* <img src={FlyingImg} alt="" className='FrontImage' /> */}
+
             <div className="nav-left">
                 <p>Nav verma</p>
                 <p>Web Devloper</p>

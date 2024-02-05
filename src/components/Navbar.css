@@ -6,6 +6,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px 60px;
+    background-color:black ;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    /* left: 0; */
 
     .nav-left {
         width: 20vw;
@@ -81,4 +86,9 @@ nav {
 
         }
     }
+}
+.FrontImage{
+    position: absolute;
+    /* z-index: 9999; */
+    
 }

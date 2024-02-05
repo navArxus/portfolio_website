@@ -4,7 +4,9 @@
 * {
   cursor: url('../src/Assests/startup.png'), auto;
 }
-
+html {
+  scroll-snap-type: y mandatory;
+}
 body {
   background-image: url("https://wallpaperset.com/w/full/7/5/b/203988.jpg");
   margin: 0;
@@ -14,12 +16,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(11, 15, 21);
+  position: absolute;
   color: whitesmoke;
-
-  /* background: radial-gradient(circle, #a87ffb40 10%, transparent 11%);
-  background-size: 1em 1em;
-  background-color: #161E29;
-  opacity: 1 */
 }
 body::before {
   z-index: -9999;
@@ -29,7 +27,7 @@ body::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(0, 0, 0, 0.782);
 }
 ::-webkit-scrollbar {
   width: 0px; /* Hide the scrollbar in WebKit-based browsers */
