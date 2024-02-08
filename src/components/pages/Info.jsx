@@ -13,6 +13,7 @@ import { SiRedux } from "react-icons/si";
 
 // Frammer motion imports 
 import { motion } from "framer-motion";
+import Terminal from "../Features/Terminal";
 
 export default function Info() {
 
@@ -113,7 +114,7 @@ export default function Info() {
       </Reveal>
       <Reveal>
         <div className="info-terminal">
-          this will be terminal 
+          <Terminal/>
         </div>
       </Reveal>
 
