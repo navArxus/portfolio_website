@@ -6,89 +6,131 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px 60px;
-    background-color:black ;
+    background-color: black;
     position: sticky;
     z-index: 99;
     top: 0;
     /* left: 0; */
+}
 
-    .nav-left {
-        width: 20vw;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: center;
-        
-        p {
-            margin: 0;
-        }
-        
-        p:nth-child(2) {
-            font-size: 12px;
-            font-weight: 300;
-        }
-    }
-    
-    .nav-middle {
-        width: 60vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .nav-right {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 20vw;
-        button {
-            background-color: rgb(168, 127, 251);
-            color: black;
-            width: fit-content;
-            height: 5vh;
-            border: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 4px 12px;
-            font-family: 'Roboto Mono', monospace;
-            border-radius: 60px;
-            cursor: url('../Assests/icons8-aim-24.png'), auto;
-        }
+.nav-left {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        margin: 0;
     }
 
-    .nav-middle-switch {
-        width: fit-content;
-        height: 5vh;
-        border: 2px solid whitesmoke;
-        padding: 2px 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        border-radius: 60px;
-        gap: 10px;
-        transition: 0.4s ease-in-out;
-
-        a {
-            text-decoration: none;
-            color: whitesmoke;
-            height: 3vh;
-            padding: 0px 12px;
-            cursor: url('../Assests/icons8-aim-24.png'), auto;
-        }
-        
-        .active {
-            cursor: url('../Assests/icons8-aim-24.png'), auto;
-            background-color: rgba(255, 255, 255, 0.156);
-            border-radius: 60px !important;
-            
-
-        }
+    p:nth-child(2) {
+        font-size: 12px;
+        font-weight: 300;
     }
 }
-.FrontImage{
+
+.nav-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    button {
+        background-color: rgb(168, 127, 251);
+        color: black;
+        width: fit-content;
+        height: 5vh;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 4px 12px;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: 60px;
+        cursor: url('../Assests/icons8-aim-24.png'), auto;
+    }
+}
+
+.nav-middle-switch {
+    width: fit-content;
+    height: 5vh;
+    border: 2px solid whitesmoke;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 60px;
+    gap: 10px;
+    transition: 0.4s ease-in-out;
+
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        height: 3vh;
+        padding: 0px 12px;
+        cursor: url('../Assests/icons8-aim-24.png'), auto;
+    }
+
+    .active {
+        cursor: url('../Assests/icons8-aim-24.png'), auto;
+        background-color: rgba(255, 255, 255, 0.156);
+        border-radius: 60px !important;
+
+
+    }
+}
+
+.FrontImage {
     position: absolute;
     /* z-index: 9999; */
-    
+
+}
+
+.resMob {
+    display: none;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.resLap {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .nav-left {
+        width: 100%;
+    }
+
+    .nav-middle {
+        width: 100%;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    .nav-left {
+        width: 100%;
+
+    }
+
+    .resMob {
+        display: block;
+    }
+
+    .resLap {
+        display: none;
+    }
+
 }

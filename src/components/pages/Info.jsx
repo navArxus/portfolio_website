@@ -96,15 +96,15 @@ export default function Info() {
       <Reveal>
         <div className="info-skill">
           <div className="info-skill-left">
-            <FaHtml5 size={"120px"} />
-            <FaCss3 size={"120px"} />
-            <IoLogoJavascript size={"120px"} />
-            <FaReact size={"120px"} />
-            <FaNode size={"120px"} />
-            <FaPython size={"120px"} />
-            <FaGithub size={"120px"} />
-            <IoLogoFirebase size={"120px"} />
-            <SiRedux size={"120px"} />
+            <FaHtml5 size={"20vh"} />
+            <FaCss3 size={"20vh"} />
+            <IoLogoJavascript size={"20vh"} />
+            <FaReact size={"20vh"} />
+            <FaNode size={"20vh"} />
+            <FaPython size={"20vh"} />
+            <FaGithub size={"20vh"} />
+            <IoLogoFirebase size={"20vh"} />
+            <SiRedux size={"20vh"} />
           </div>
           <div className="info-skill-right">
             <h2>Skills</h2>

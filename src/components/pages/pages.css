@@ -137,3 +137,44 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    .info-page {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .info-skill {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        .info-skill-left {
+            gap: 30px;
+            height: fit-content;
+        }
+    }
+    .info-page-content {
+        text-align: center;
+
+        h1 {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+    .info-about-data {
+        width: 80% !important;
+        margin-bottom: 80px;
+    } 
+    .info-skill-left {
+        grid-template-rows: repeat(5,1fr) !important;
+        grid-template-columns: repeat(2,1fr) !important ;
+    }
+    .info-skill-right {
+        width: 80% !important;
+    }
+    .info-terminal {
+        display: none;
+    }
+}

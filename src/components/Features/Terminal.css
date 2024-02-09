@@ -1,11 +1,10 @@
 .Terminal {
     border: 2px solid rgb(36, 36, 36);
     font-family: 'Roboto Mono', monospace;
-    /* border: 2px solid white; */
     border-radius: 12px;
+    animation: rainbow 3s infinite;
     height: 80%;
     margin: 60px;
-    /* padding: 10px; */
     background-color: black;
     overflow: hidden;
     text-align: start;
@@ -41,7 +40,8 @@
         border-radius: 0px 0px 12px 12px;
         border-top: 0px solid black;
         padding: 8px 12px;
-        
+        overflow: auto;
+
         .Terminal-body-input {
             width: 100%;
             display: flex;
@@ -68,5 +68,39 @@
                 margin: 0;
             }
         }
+    }
+}
+
+@keyframes rainbow {
+
+    from,
+    to {
+        box-shadow: 0 0 15px 0 rgba(255, 0, 0, 0.455)
+    }
+
+    16% {
+        box-shadow: 0 0 15px 0 rgba(255, 255, 0, 0.455)
+    }
+
+    32% {
+        box-shadow: 0 0 15px 0 rgba(0, 128, 0, 0.455)
+    }
+
+    48% {
+        box-shadow: 0 0 15px 0 rgba(0, 255, 255, 0.455)
+    }
+
+    64% {
+        box-shadow: 0 0 15px 0 rgba(0, 0, 255, 0.455)
+    }
+
+    80% {
+        box-shadow: 0 0 15px 0 rgba(255, 0, 255, 0.455)
+    }
+}
+.Command {
+    margin-bottom: 10px;
+    p {
+        margin: 0;
     }
 }
